@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'segoe': ['"Segoe UI"', 'sans-serif'], // Adds "Segoe UI" font
+      },
+      backgroundImage:{
+        'faqbg':"url('../public/FAQ/faqBg.png')"
+      }
     },
   },
   plugins: [],
