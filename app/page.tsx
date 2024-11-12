@@ -1,14 +1,22 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import Faq from '../components/Faq'
-import TermsAndConditions from "@/components/Terms";
+import Blogathon from '../components/Blogathon'
+import WinsAndImpact from '../components/WinsAndImpact'
+import PrizesAndRewards from '@/components/PrizesAndRewards'
+import WhyParticipate from '@/components/WhyParticipate'
+// import Faq from '../components/Faq'
+// import TermsAndConditions from "@/components/Terms";
 
 const page = () => {
   return (
     <div className='--font-segoe-ui'>
       <Hero />
-      <Faq/>
-      <TermsAndConditions/>
+      <Blogathon/>
+      <WinsAndImpact/>
+      <PrizesAndRewards/>
+      <WhyParticipate/>
+      {/* <Faq/> */}
+      {/* <TermsAndConditions/> */}
     </div>
   )
 
