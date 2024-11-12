@@ -4,8 +4,9 @@ import Blogathon from '../components/Blogathon'
 import WinsAndImpact from '../components/WinsAndImpact'
 import PrizesAndRewards from '@/components/PrizesAndRewards'
 import WhyParticipate from '@/components/WhyParticipate'
-// import Faq from '../components/Faq'
-// import TermsAndConditions from "@/components/Terms";
+import Faq from '../components/Faq'
+import TermsAndConditions from "@/components/Terms";
+import Footer from '@/components/Footer';
 
 const page = () => {
   return (
@@ -15,8 +16,9 @@ const page = () => {
       <WinsAndImpact/>
       <PrizesAndRewards/>
       <WhyParticipate/>
-      {/* <Faq/> */}
-      {/* <TermsAndConditions/> */}
+      <Faq/>
+      <TermsAndConditions/>
+      <Footer/>
     </div>
   )
 
