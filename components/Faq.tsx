@@ -120,64 +120,61 @@ const Faq: React.FC = () => {
   };
 
   return (
-
-    <div className=' '>
-      {/* timeLines */}
-      <section id='timeline' className='px-'>
+    <div className="w-full">
+      {/* Timeline Section */}
+      <section id="timeline" className="px-4 md:px-8">
         <div className="content flex flex-col justify-center items-center pt-10 pb-7 gap-5">
-          <h1 className="w-[822px] h-[87px] flex-shrink-0 text-custom-blue text-center text-6xl font-segoe font-semibold text-[#28456F]">
+          <h1 className="text-4xl md:text-6xl text-[#28456F] text-center font-segoe font-semibold mb-6">
             Timeline For Phase 2
           </h1>
-
-          <Image src={timeline} alt="timeline" className='w-[800px] h-72' />
+          <Image src={timeline} alt="timeline" className="w-full max-w-[800px] h-auto" />
         </div>
       </section>
 
-      {/* faq section */}
-      <div id='faq' className='bg-faqbg  flex justify-center py-8 sm:py-14 px-4' >
-        <section className='flex flex-col max-w-5xl'>
-          <div className="text-center mb-6 sm:mb-8">
-            <h1 className=' flex-shrink-0 text-custom-blue text-center text-6xl font-segoe font-semibold text-[#28456F]'>
-            FAQs - Blogathon
+      {/* FAQ Section */}
+      <div id="faq" className=" flex justify-center py-8 sm:py-14 px-4">
+        <section className="flex flex-col max-w-3xl md:max-w-5xl w-full">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl md:text-6xl text-[#28456F] font-segoe font-semibold">
+              FAQs - Blogathon
             </h1>
-          
           </div>
 
           <div className="space-y-3 sm:space-y-4">
-  {questions.map((q) => (
-    <div
-      key={q.id}
-      className="p-3 sm:p-4 rounded-lg cursor-pointer border border-transparent hover:border-[#09EDE0]/20 transition-colors duration-200 mx-auto w-full"
-      onClick={() => toggleQuestion(q.id)}
-    >
-      <div className="flex justify-between items-center gap-4">
-        <h3
-          className={`text-base font-segoe sm:text-lg font-semibold ${activeQuestion === q.id ? 'text-black' : 'text-black'} transition-colors duration-200`}
-        >
-          <span className="mr-2">•</span>
-          {q.question}
-        </h3>
-        <div
-          className={`transform transition-transform duration-200 flex-shrink-0 ${activeQuestion === q.id ? '' : 'rotate-180'}`}
-        >
-          <Image alt='arrow' src={arrowUp} className={`${activeQuestion === q.id ? 'text-[#f1d2e0]' : 'text-black'} w-4 h-4 sm:w-4 sm:h-4`} />
-        </div>
-      </div>
+            {questions.map((q) => (
+              <div
+                key={q.id}
+                className="p-3 sm:p-4 rounded-lg cursor-pointer border border-transparent hover:border-[#09EDE0]/20 transition-colors duration-200 mx-auto w-full"
+                onClick={() => toggleQuestion(q.id)}
+              >
+                <div className="flex justify-between items-center gap-4">
+                  <h3
+                    className={`text-sm sm:text-base font-segoe font-semibold transition-colors duration-200 ${activeQuestion === q.id ? 'text-black' : 'text-black'}`}
+                  >
+                    <span className="mr-2">•</span>
+                    {q.question}
+                  </h3>
+                  <div
+                    className={`transform transition-transform duration-200 flex-shrink-0 ${activeQuestion === q.id ? '' : 'rotate-180'}`}
+                  >
+                    <Image alt="arrow" src={arrowUp} className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </div>
+                </div>
 
-      <div
-        ref={setRef(q.id)}
-        className="overflow-hidden transition-all duration-300 ease-in-out"
-        style={{
-          height: activeQuestion === q.id ? `${heights[q.id]}px` : '0',
-        }}
-      >
-        <p className="text-black font-normal mt-2 text-sm sm:text">
-          {q.answer}
-        </p>
-      </div>
-    </div>
-  ))}
-</div>
+                <div
+                  ref={setRef(q.id)}
+                  className="overflow-hidden transition-all duration-300 ease-in-out"
+                  style={{
+                    height: activeQuestion === q.id ? `${heights[q.id]}px` : '0',
+                  }}
+                >
+                  <p className="text-black font-normal mt-2 text-sm sm:text-base">
+                    {q.answer}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
       </div>
     </div>
