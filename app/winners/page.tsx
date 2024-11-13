@@ -52,7 +52,7 @@ const WinnersPage: React.FC = () => {
 {/* Winners Cards */}
 <div className="flex flex-col items-center mt-6 px-1 pt-1 lg:h-[50rem] ">
   {/* Top Winner */}
-  <div className="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow-md pb-6 pt-3 px-3 w-[280px] md:w-[320px] lg:w-[330px] text-center">
+  <div className="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow-md pb-6 pt-3 px-3 w-[280px] md:w-[320px] lg:w-[330px] text-center mb-4 md:mb-0">
     <div className="relative w-full h-72 mx-auto mb-4">
       <Image src={winners[0].image} alt={winners[0].name} className="w-full h-full" />
     </div>
@@ -65,7 +65,7 @@ const WinnersPage: React.FC = () => {
   </div>
 
   {/* Bottom Row Winners */}
-  <div className="flex flex-col md:flex-row items-center gap-8 w-full lg:gap-x-[30rem] lg:relative lg:bottom-48">
+  <div className="flex flex-col gap-y-4  md:flex-row items-center  w-full md:gap-x-14 lg:gap-x-[30rem] lg:relative lg:bottom-48">
     {winners.slice(1).map((winner) => (
       <div
         key={winner.id}
