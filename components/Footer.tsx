@@ -29,7 +29,7 @@ const Footer = () => {
                             <h1 className="font-semibold text-2xl sm:text-3xl">
                                 <span className="text-blue-500">Azure</span> Blogathon
                             </h1>
-                            <p className="text-sm md:text-[13px]">Powered by ID8NXT LLP</p>
+                            <p className="text-[10px] md:text-[13px] text-end">Powered by ID8NXT LLP</p>
                             </Link>
                         </div>
                         <div className="flex gap-4 md:gap-0 md:justify-between">
