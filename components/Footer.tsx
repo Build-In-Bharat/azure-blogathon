@@ -79,7 +79,7 @@ const Footer = () => {
                         top: 0,
                         behavior: 'smooth'
                     });
-                }} className="circle w-10 h-10 sm:w-11 sm:h-11 rounded-full fixed right-3 bottom-6 md:right-16 md:bottom-11 bg-blue-600 p-2 flex items-center justify-center">
+                }} className="circle w-10 h-10 sm:w-11 sm:h-11 rounded-full fixed right-3 bottom-6 md:right-10 md:bottom-11 bg-blue-600 p-2 flex items-center justify-center">
                     <Image src={doubleUp} alt="Back to Top" />
                 </div>
             </section>
