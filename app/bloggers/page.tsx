@@ -72,7 +72,7 @@ const Page: React.FC = () => {
       />
         <div className=" max-w-4xl mx-auto px-6 pt-12 relative">
           <h1 className="text-center text-[#28456F] font-semibold text-[50px] leading-[80.851px] font-['Segoe UI'] mb-10">
-            Blogger's Guide
+            Blogger&apos;s Guide
           </h1>
           {blogs.map((blog, index) => (
             <BloggerCard key={index} blog={blog} />

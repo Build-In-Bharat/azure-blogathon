@@ -1,10 +1,9 @@
 'use client'
 import React, { useState, useRef, useEffect } from 'react';
-import { FaChevronDown } from 'react-icons/fa';
 import Image from 'next/image';
 import timeline from '@/public/FAQ/timeline.svg';
 import arrowUp from '@/public/FAQ/arrowUp.svg'
-import faqBg from '@/public/FAQ/faqBg.png';
+
 interface Question {
   id: number;
   question: string;

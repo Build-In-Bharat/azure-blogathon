@@ -6,6 +6,7 @@ import {
   CarouselItem
 } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
+import Image from 'next/image';
 
 interface PrizeCard {
   image: string;
@@ -60,7 +61,9 @@ const PrizesAndRewards = ({ title = "Prizes and Rewards", subtitle = "Winnings a
                 <Card className="h-[350px] md:h-[400px] lg:h-[450px]">
                   <CardContent className="flex flex-col items-center p-4 md:p-6 h-full">
                     <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden flex items-center justify-center">
-                      <img 
+                      <Image
+                        width={300}
+                        height={300}
                         src={card.image}
                         alt={card.alt}
                         className="w-full h-full object-contain rounded-t-lg"
