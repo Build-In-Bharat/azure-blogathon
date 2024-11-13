@@ -125,7 +125,7 @@ const Faq: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <div id='forum'  className=" flex justify-center py-8 sm:py-14 px-4">
+      <div  id='forum'  className="bg-faqbg flex justify-center py-8 sm:py-14 px-4">
         <section className="flex flex-col max-w-3xl md:max-w-5xl w-full">
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#28456F] font-segoe font-bold">

@@ -31,7 +31,7 @@ const winners = [
 
 const WinnersPage: React.FC = () => {
   return (
-    <>    <div className="flex flex-col items-center bg-white min-h-screen  pt-14 pb-14">
+    <>    <div className="bg-faqbg flex flex-col items-center bg-white min-h-screen  pt-14 pb-14">
       {/* Title */}
       <h1 className="text-[#28456F] text-left font-['Segoe_UI'] text-3xl md:text-4xl lg:text-5xl font-bold leading-[122.502%]">
         Phase 1 Winner&apos;s
