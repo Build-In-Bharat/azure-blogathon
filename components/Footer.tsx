@@ -13,9 +13,9 @@ const Footer = () => {
     const quickLinks = [
         { name: 'Home', href: '/#home' },
         { name: 'About Blogathon', href: '/#about' },
-        { name: 'Register Now', href: '/registration' },
-        { name: `Faq's`, href: '/#faq' },
-        { name: 'Privacy Policy', href: '/#faq' },
+        { name: 'Register Now', href: '#' },
+        { name: `Faq's`, href: '/#forum' },
+        { name: 'Privacy Policy', href: '' },
     ];
 
     return (

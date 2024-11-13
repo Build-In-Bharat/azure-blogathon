@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Blogathon = () => {
   return (
-    <div className="relative pt-12 xl:pt-24 xl:pb-36 pb-48">
+    <div id='about' className="relative pt-12 xl:pt-24 xl:pb-36 pb-48">
       <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/second-section-bg.png"

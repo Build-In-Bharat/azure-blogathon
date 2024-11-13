@@ -4,6 +4,7 @@ import { FaChevronDown } from 'react-icons/fa';
 import Image from 'next/image';
 import timeline from '@/public/FAQ/timeline.svg';
 import arrowUp from '@/public/FAQ/arrowUp.svg'
+import faqBg from '@/public/FAQ/faqBg.png';
 interface Question {
   id: number;
   question: string;
@@ -14,78 +15,67 @@ interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    question: "What is CopilotSprint?",
-    answer: "CopilotSprint is a dynamic event that introduces developers to GitHub Copilot, an AI-powered coding assistant. It's an opportunity to learn, collaborate, and boost your coding skills."
-  },
-  {
+    question: "What is the Azure Blogathon?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
+    id: 2,
+    question: "Who can participate in the Azure Blogathon?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 3,
-    question: "Who should attend Copilot Sprint?",
-    answer: "Developers, coders, and coding enthusiasts of all levels are welcome! Whether you're a beginner or an experienced pro, you'll find value at our workshop."
-  },
-  {
+    question: "How do I participate in the Azure Blogathon?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 4,
-    question: "Is there a registration fee?",
-    answer: "No, registration for Copilot Sprint is completely free!"
-  },
-  {
+    question: "Are there any specific themes or topics for the blog posts?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 5,
-    question: "What will I gain from the workshop?",
-    answer: "Participants get to engage in interactive sessions led by Copilot experts. They will showcase real-world use cases, demonstrate Copilot's capabilities, and provide guidance on integrating it into daily coding practices."
-  },
-  {
+    question: "What are the submission guidelines for blog posts?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 6,
-    question: "How can I register for the workshop?",
-    answer: "Copilot Sprint aims to equip developers with practical skills to maximize the potential of GitHub Copilot. By attending, you'll learn how Copilot accelerates coding tasks, improves code quality, and integrates seamlessly into your development workflow."
-  },
-  {
+    question: "Is there a deadline for submitting blog posts?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 7,
-    question: "What is CopilotSprint?",
-    answer: "CopilotSprint is a dynamic event that introduces developers to GitHub Copilot, an AI-powered coding assistant. It's an opportunity to learn, collaborate, and boost your coding skills."
-  },
-  {
+    question: "How are blog posts judged?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 8,
-    question: "Who should attend Copilot Sprint?",
-    answer: "Developers, coders, and coding enthusiasts of all levels are welcome! Whether you're a beginner or an experienced pro, you'll find value at our workshop."
-  },
-  {
+    question: "Are there any specific themes or topics for the blog posts?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 9,
-    question: "Is there a registration fee?",
-    answer: "No, registration for Copilot Sprint is completely free!"
-  },
-  {
+    question: "What are the submission guidelines for blog posts?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 10,
-    question: "What will I gain from the workshop?",
-    answer: "Participants get to engage in interactive sessions led by Copilot experts. They will showcase real-world use cases, demonstrate Copilot's capabilities, and provide guidance on integrating it into daily coding practices."
-  },
-  {
+    question: "Is there a deadline for submitting blog posts?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 11,
-    question: "How can I register for the workshop?",
-    answer: "Copilot Sprint aims to equip developers with practical skills to maximize the potential of GitHub Copilot. By attending, you'll learn how Copilot accelerates coding tasks, improves code quality, and integrates seamlessly into your development workflow."
-  },
-   {
+    question: "How are blog posts judged?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 12,
-    question: "How can I register for the workshop?",
-    answer: "Copilot Sprint aims to equip developers with practical skills to maximize the potential of GitHub Copilot. By attending, you'll learn how Copilot accelerates coding tasks, improves code quality, and integrates seamlessly into your development workflow."
-  },
-  {
+    question: "What prizes are offered for the best blog posts?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 13,
-    question: "What is CopilotSprint?",
-    answer: "CopilotSprint is a dynamic event that introduces developers to GitHub Copilot, an AI-powered coding assistant. It's an opportunity to learn, collaborate, and boost your coding skills."
+    question: "Where can I find resources to help with my blog post?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
   },
   {
     id: 14,
-    question: "Who should attend Copilot Sprint?",
-    answer: "Developers, coders, and coding enthusiasts of all levels are welcome! Whether you're a beginner or an experienced pro, you'll find value at our workshop."
-  },
-  {
+    question: "Will the blog posts be published on the Azure Blogathon website?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
+  },  {
     id: 15,
-    question: "Is there a registration fee?",
-    answer: "No, registration for Copilot Sprint is completely free!"
+    question: "How can I stay updated on the Azure Blogathon?",
+    answer: "The Azure Blogathon is a community-driven event focused on sharing knowledge, experiences, and insights related to Microsoft Azure."
   },
-
-  
-  
-];
+]
 
 const Faq: React.FC = () => {
   const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
@@ -120,11 +110,14 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <div className="w-full">
+     
+     <>
+        
+     <div id='timeline' className="w-full md:pt-28">
       {/* Timeline Section */}
       <section id="timeline" className="px-4 md:px-8">
         <div className="content flex flex-col justify-center items-center pt-10 pb-7 gap-5">
-          <h1 className="text-4xl md:text-6xl text-[#28456F] text-center font-segoe font-semibold mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#28456F] text-center font-segoe font-bold mb-6">
             Timeline For Phase 2
           </h1>
           <Image src={timeline} alt="timeline" className="w-full max-w-[800px] h-auto" />
@@ -132,14 +125,14 @@ const Faq: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <div id="faq" className=" flex justify-center py-8 sm:py-14 px-4">
+      <div id='forum'  className=" flex justify-center py-8 sm:py-14 px-4">
         <section className="flex flex-col max-w-3xl md:max-w-5xl w-full">
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-6xl text-[#28456F] font-segoe font-semibold">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl text-[#28456F] font-segoe font-bold">
               FAQs - Blogathon
             </h1>
           </div>
-
+        
           <div className="space-y-3 sm:space-y-4">
             {questions.map((q) => (
               <div
@@ -178,6 +171,10 @@ const Faq: React.FC = () => {
         </section>
       </div>
     </div>
+
+      
+    </>
+
   );
 };
 

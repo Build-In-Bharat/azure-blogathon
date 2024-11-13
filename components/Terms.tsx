@@ -4,7 +4,7 @@ const TermsAndConditions = () => {
   return (
     <div className="min-h-screen flex flex-col items-center pt-10 bg-gradient-to-r from-[rgba(63,97,173,0.24)] via-[rgba(168,76,156,0.24)] to-[rgba(238,54,77,0.24)] px-4 lg:px-0 pb-10 lg:pb-24">
       <div className="text-center max-w-5xl">
-        <h1 className="text-[#28456F] font-bold font-['Segoe_UI'] text-4xl sm:text-5xl md:text-[66px] leading-tight md:leading-[122.502%]">
+        <h1 className="text-[#28456F] font-bold font-['Segoe_UI'] text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-[122.502%]">
           Terms and Conditions
         </h1>
         <div className="lists pt-8 sm:pt-10 px-4 sm:px-8 lg:p">
