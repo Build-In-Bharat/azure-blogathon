@@ -64,7 +64,7 @@ const Footer = () => {
                     <h2 className="font-semibold text-2xl sm:text-3xl">Get In Touch</h2>
                     <div className="flex gap-2 items-center">
                         <Image src={mail} alt="Email" width={20} height={20} />
-                        <a href="mailto:info@azureblogathon.com" className="hover:underline text-sm">
+                        <a  className="hover:underline text-sm">
                             info@azureblogathon.com
                         </a>
                     </div>
