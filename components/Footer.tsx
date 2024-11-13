@@ -23,7 +23,7 @@ const Footer = () => {
             <section className="flex flex-col gap-y-5 px-6 sm:px-12 lg:px-24">
                 <div className="flex flex-col gap-y-8 md:flex-row md:justify-between md:h-48">
                     {/* Brand and Socials */}
-                    <div className="space-y-4 md:space-y-10 pr-0 md:pr-10 pb-2 md:border-b-[1px] border-gray-600 md:border-none">
+                    <div className="space-y-4 md:space-y-10 pr-0 md:pr-10 pb-2 md:border-b-[1px] border-gray-600 ">
                         <div className="flex flex-col items-start md:items-end">
                             <Link href='/#home'>
                             <h1 className="font-semibold text-2xl sm:text-3xl">
@@ -41,13 +41,13 @@ const Footer = () => {
                     </div>
 
                     {/* Archive */}
-                    <div className="space-y-4 md:space-y-16 pr-0 md:pr-10 pb-2 md:border-b-[1px] border-gray-600 md:border-none">
+                    <div className="space-y-4 md:space-y-16 pr-0 md:pr-10 pb-2 md:border-b-[1px] border-gray-600 e">
                         <h2 className="font-semibold text-2xl sm:text-3xl">ARCHIVE</h2>
                         <p className="text-base">2022 Edition: Unleash The Blogger in You</p>
                     </div>
 
                     {/* Quick Links */}
-                    <div className="flex flex-col space-y-4 md:space-y-12 pr-0 md:pr-10 pb-2 md:border-b-[1px] border-gray-600 md:border-none w-full md:w-[350px]">
+                    <div className="flex flex-col space-y-4 md:space-y-12 pr-0 md:pr-10 pb-2 md:border-b-[1px] border-gray-600  w-full md:w-[350px]">
                         <h2 className="font-semibold text-2xl sm:text-3xl">Quick Links</h2>
                         <div className="flex flex-wrap gap-4 py-2 md:py-4">
                             {quickLinks.map((link, index) => (
@@ -60,7 +60,7 @@ const Footer = () => {
 
                     {/* Contact */}
                 </div>
-                <div className="flex flex-col md:self-end gap-y-4 pr-0 md:pr-10 w-full md:w-auto lg:w-[350px]">
+                <div className="flex flex-col md:self-end gap-y-4 pr-0 md:pr-10 lg:pt-6 w-full md:w-auto lg:w-[350px]">
                     <h2 className="font-semibold text-2xl sm:text-3xl">Get In Touch</h2>
                     <div className="flex gap-2 items-center">
                         <Image src={mail} alt="Email" width={20} height={20} />
@@ -79,7 +79,7 @@ const Footer = () => {
                         top: 0,
                         behavior: 'smooth'
                     });
-                }} className="circle w-10 h-10 sm:w-11 sm:h-11 rounded-full fixed right-6 bottom-6 md:right-16 md:bottom-11 bg-blue-600 p-2 flex items-center justify-center">
+                }} className="circle w-10 h-10 sm:w-11 sm:h-11 rounded-full fixed right-3 bottom-6 md:right-16 md:bottom-11 bg-blue-600 p-2 flex items-center justify-center">
                     <Image src={doubleUp} alt="Back to Top" />
                 </div>
             </section>
