@@ -55,7 +55,7 @@ export default {
         segoe: ['Segoe UI', 'sans-serif']
       },
       backgroundImage: {
-        faqbg: "url('/FAQ/faqBg.png')"
+        faqbg: "url('/FAQ/backgroundFaq.png')"
       },
       borderRadius: {
         lg: 'var(--radius)',

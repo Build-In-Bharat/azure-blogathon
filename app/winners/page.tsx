@@ -36,7 +36,9 @@ const WinnersPage: React.FC = () => {
       <h1 className="text-[#28456F] text-left font-['Segoe_UI'] text-3xl md:text-4xl lg:text-5xl font-bold leading-[122.502%]">
         Phase 1 Winner&apos;s
       </h1>
-      <p className="text-[#28456F] md:w-[24rem] font-['Segoe_UI'] text-xl md:text-2xl text-left font-bold leading-[122.502%] md:mt-2">Theme: Data & AI and Apps</p>
+      <p className="text-[#28456F] md:w-[23rem] font-['Segoe_UI'] text-xl md:text-[26px] text-left font-bold leading-[122.502%] md:mt-2" style={{ wordSpacing: '0.1em' }}>
+  Theme: Data & AI and Apps
+</p>
 
       {/* Subtitle */}
       <div className="mt-8 md:mt-24 mb-4 text-center">
@@ -48,7 +50,7 @@ const WinnersPage: React.FC = () => {
       {/* Winners Cards */}
       {/* Winners Cards */}
 {/* Winners Cards */}
-<div className="flex flex-col items-center gap-8 mt-6 px-1 pt-1 ">
+<div className="flex flex-col items-center mt-6 px-1 pt-1 lg:h-[50rem] ">
   {/* Top Winner */}
   <div className="flex flex-col items-center bg-white border border-gray-300 rounded-lg shadow-md pb-6 pt-3 px-3 w-[280px] md:w-[320px] lg:w-[350px] text-center">
     <div className="relative w-full h-72 mx-auto mb-4">

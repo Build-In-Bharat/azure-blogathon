@@ -25,10 +25,12 @@ const Footer = () => {
                     {/* Brand and Socials */}
                     <div className="space-y-4 md:space-y-10 pr-0 md:pr-10 pb-2 md:border-b-[1px] border-gray-600 md:border-none">
                         <div className="flex flex-col items-start md:items-end">
+                            <Link href='/#home'>
                             <h1 className="font-semibold text-2xl sm:text-3xl">
                                 <span className="text-blue-500">Azure</span> Blogathon
                             </h1>
                             <p className="text-sm md:text-[13px]">Powered by ID8NXT LLP</p>
+                            </Link>
                         </div>
                         <div className="flex gap-4 md:gap-0 md:justify-between">
                             <Image src={instagram} alt="Instagram" width={24} height={24} />
