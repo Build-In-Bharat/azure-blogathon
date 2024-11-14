@@ -29,7 +29,7 @@ const Page: React.FC = () => {
                         Our Community of Azure Enthusiasts is Here to Help!
                     </p>
                     <p className="text-xs md:text-base text-gray-600 mt-2">
-                        Ask your questions, share insights, and learn from fellow users. Whether you're an experienced developer or just starting out, you'll find friendly support and guidance here. Together, let’s collaborate, share knowledge, and build amazing projects!
+                        Ask your questions, share insights, and learn from fellow users. Whether you&apos;re an experienced developer or just starting out, you&apos;ll find friendly support and guidance here. Together, let&apos;s collaborate, share knowledge, and build amazing projects!
                     </p>
                 </div>
             </div>
