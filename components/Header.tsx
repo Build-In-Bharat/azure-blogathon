@@ -57,7 +57,7 @@ const Header = () => {
             <Link href='/#plans' className={`text-black px-2 py-1 my-1 ${currentPath === '/plans' ? 'bg-[#BDE7FF]' : ''}`}>Plans</Link>
             <Link href='/winners' className={`text-black px-2 py-1 my-1 ${currentPath === '/winners' ? 'bg-[#BDE7FF]' : ''}`}>Winners</Link>
             <Link href='/#timeline' className={`text-black px-2 py-1 my-1 ${currentPath === '/timeline' ? 'bg-[#BDE7FF]' : ''}`}>Timeline</Link>
-            <Link href='/#forum' className={`text-black px-2 py-1 my-1 ${currentPath === '/forum' ? 'bg-[#BDE7FF]' : ''}`}>Forum</Link>
+            <Link href='/forums' className={`text-black px-2 py-1 my-1 ${currentPath === '/forum' ? 'bg-[#BDE7FF]' : ''}`}>Forum</Link>
             <Link href='/bloggers' className={`text-black px-4 py-1 my-1 border border-black ${currentPath === '/bloggers-guide' ? 'bg-[#BDE7FF]' : ''}`}>Blogger&apos;s Guide</Link>
           </div>
           <div className='flex flex-col md:flex-row items-start md:items-center gap-2 w-full md:w-auto mt-4 md:mt-0'>
