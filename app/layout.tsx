@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "../components/Header"; 
+import { AuthProvider } from "@/components/providers/auth-provider";
+// import { usePathname } from "next/navigation";
 
 const SegoeUI = localFont({
   src: "./fonts/SegoeUI.ttf",
@@ -19,13 +21,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const pathname = usePathname();
+  // const showHeader = pathname !== '/login';
+
   return (
     <html lang="en">
       <body
         className={`${SegoeUI.variable} antialiased`}
       >
-        <Header />
-        {children}
+        <AuthProvider>
+          <Header />
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

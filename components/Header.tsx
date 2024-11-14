@@ -4,10 +4,20 @@ import AzureLogo from './assets/Azure-Logo'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useAuth } from "@/components/providers/auth-provider";
 
 const Header = () => {
   const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, signOut } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await signOut();
+    } catch (error) {
+      console.error("Error signing out:", error);
+    }
+  };
 
   return (
     <div>
@@ -61,8 +71,11 @@ const Header = () => {
             <Link href='/bloggers' className={`text-black px-4 py-1 my-1 border border-black ${currentPath === '/bloggers-guide' ? 'bg-[#BDE7FF]' : ''}`}>Blogger&apos;s Guide</Link>
           </div>
           <div className='flex flex-col md:flex-row items-start md:items-center gap-2 w-full md:w-auto mt-4 md:mt-0'>
-            <button className='bg-black text-white px-2 py-1 w-full md:w-auto'>REGISTER NOW</button>
-            <button className='bg-black text-white px-2 py-1 w-full md:w-auto'>LOGIN</button>
+            {!user ? (
+              <Link href='/login'><button className='bg-black text-white px-2 py-1 w-full md:w-auto'>LOGIN / REGISTER NOW</button></Link>
+            ) : (
+              <button onClick={handleLogout} className='bg-black text-white px-2 py-1 w-full md:w-auto'>LOGOUT</button>
+            )}
           </div>
         </div>
       </div>
