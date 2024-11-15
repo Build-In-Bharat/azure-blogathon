@@ -38,7 +38,7 @@ const Header = () => {
         </div>
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className='md:hidden text-black'
+          className='xl:hidden text-black'
         >
           {isMenuOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -57,11 +57,11 @@ const Header = () => {
       <div className='h-[1px] bg-[#E2E2E2] w-full'></div>
       <div className='relative bg-white'>
         <div className={`
-          flex flex-col md:flex-row justify-between font-bold items-start md:items-center 
+          flex flex-col xl:flex-row justify-between font-bold items-start xl:items-center 
           px-4 md:px-24 py-2 bg-white
-          ${isMenuOpen ? 'block' : 'hidden md:flex'}
+          ${isMenuOpen ? 'block' : 'hidden xl:flex'}
         `}>
-          <div className='flex flex-col md:flex-row gap-4 w-full md:w-auto'>
+          <div className='flex flex-col xl:flex-row gap-4 w-full xl:w-auto'>
             <Link href='/' className={`text-black px-2 py-1 my-1 ${currentPath === '/' ? 'bg-[#BDE7FF]' : ''}`}>Home</Link>
             <Link href='/#theme' className={`text-black px-2 py-1 my-1 ${currentPath === '/themes-terms' ? 'bg-[#BDE7FF]' : ''}`}>Themes & Terms</Link>
             <Link href='/#plans' className={`text-black px-2 py-1 my-1 ${currentPath === '/plans' ? 'bg-[#BDE7FF]' : ''}`}>Plans</Link>
@@ -70,11 +70,11 @@ const Header = () => {
             <Link href='/forums' className={`text-black px-2 py-1 my-1 ${currentPath === '/forum' ? 'bg-[#BDE7FF]' : ''}`}>Forum</Link>
             <Link href='/bloggers' className={`text-black px-4 py-1 my-1 border border-black ${currentPath === '/bloggers-guide' ? 'bg-[#BDE7FF]' : ''}`}>Blogger&apos;s Guide</Link>
           </div>
-          <div className='flex flex-col md:flex-row items-start md:items-center gap-2 w-full md:w-auto mt-4 md:mt-0'>
+          <div className='flex flex-col xl:flex-row items-start xl:items-center gap-2 w-full xl:w-auto mt-4 xl:mt-0'>
             {!user ? (
-              <Link href='/login'><button className='bg-black text-white px-2 py-1 w-full md:w-auto'>LOGIN / REGISTER NOW</button></Link>
+              <Link href='/login'><button className='bg-black text-white px-2 py-1 w-full xl:w-auto'>LOGIN / REGISTER NOW</button></Link>
             ) : (
-              <button onClick={handleLogout} className='bg-black text-white px-2 py-1 w-full md:w-auto'>LOGOUT</button>
+              <button onClick={handleLogout} className='bg-black text-white px-2 py-1 w-full xl:w-auto'>LOGOUT</button>
             )}
           </div>
         </div>

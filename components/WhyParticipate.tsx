@@ -53,15 +53,7 @@ interface WhyParticipateProps {
 
 const WhyParticipate = ({ title = "Why Participate?", cards = participateData }: WhyParticipateProps) => {
   return (
-    <div className='relative'>
-      <div className="hidden md:block absolute h-screen inset-0 overflow-hidden">
-        <Image
-          src="/why-participate-bg.png"
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+    <div className='bg-[url("/why-participate-bg.png")] bg-cover bg-center bg-no-repeat'>
       <div className='relative z-10 text-[#28456F] text-3xl md:text-4xl lg:text-5xl font-bold text-center pt-8 md:pt-12 mb-8 md:mb-16'>{title}</div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-7 pb-8 md:pb-12 mx-4 md:mx-8 lg:mx-12'>
         {cards.map((card, index) => {
